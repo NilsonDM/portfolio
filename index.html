@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Nilson Diaz</title>
+</head>
+
+<body>
+
+    <!------MENU------>
+
+    <i onclick="toggleMenu()" class='iconShowMenu bx bx-menu'></i>
+
+    <nav class="navbar whiteMode">
+        <ul id="main_menu" class="navbar__menu hidden">
+            <li><a class="link" href="#home">Inicio</a></li>
+            <li><a class="link" href="#aboutme">Sobre mi</a></li>
+            <li><a class="link" href="#portfolio">Portafolio</a></li>
+            <li><a class="link" href="#contact">Contact</a></li>
+            <li class="iconTheme">☀️</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h1 class="home__title">Hola, soy <span>Nilson Díaz</span> y soy <span>desarrollador frontend</span></h1>
+            <div class="img_container">
+                <img src="./img/profile.jpeg" alt="Nilson Diaz">
+            </div>
+
+            <div class="icons_container">
+                <a href="https://www.linkedin.com/in/nilson-diaz-a44a9b205/" target="_blank">
+                    <i class='icon bx bxl-linkedin-square'></i>
+                </a>
+
+                <a href="https://github.com/NilsonDM" target="_blank">
+                    <i class='icon bx bxl-github'></i>
+                </a>
+
+                <a href="https://www.instagram.com/nilson_dm/"  target="_blank">
+                    <i class='icon bx bxl-instagram-alt'></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="aboutme">
+            <h2>Sobre mi</h2>
+            <p>
+                Apasionado por la programación, siempre en aprendizaje de las nuevas
+                tecnologías, frameworks y librerías a través de su documentación y práctica constante. Actualmente
+                estoy cursando la carrera de programación web full-stack en un bootcamp, en el cual he sido
+                certificado como desarrollador frontend con conocimientos sólidos en Javascript, React, Git, etc.
+            </p>
+
+            <div class="cv">
+                <a download="Nilson_cv" href="https://drive.google.com/file/d/1ruRDRG4Z7dc1sxeyTyVIVlL5Z51-zJeo/view?usp=share_link" target="_blank">
+                    <p>Descargar CV</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portafolio</h2>
+            <div class="portfolios">
+                <div class="portfolio">
+                    <img src="./img/pokedex.png" alt="pokedex">
+                    <div class="portfolio_description ">
+                        <h3>Pokedex</h3>
+                        <p>
+                            Pagina que permite ver información en detalle de los pokemons gracias al consumo de una API
+                            utilizando axios. Se hizo uso de estados globales en React con Redux
+                            Navegacion por paginas con React router.
+                            Se creó una paginación y un filtrado de pokemons por categoría
+                        </p>
+
+                        <div class="buttons">
+                            <a href="https://pokedex-app-api.netlify.app" target="_blank">Ver proyecto</a>
+                            <a href="https://github.com/NilsonDM/pokeAPI.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio">
+                    <img src="./img/rick&morty.png" alt="rick & morty">
+                    <div class="portfolio_description ">
+                        <h3>App Rick and Morty</h3>
+                        <p>
+                            Esta aplicación permite ver infomarción de los personajes de la serie Rick and Morty. Para
+                            eso consumimos una API con axios. Tambien se puede buscar las dimensiones desde la 1 hasta
+                            la 126.
+                        </p>
+                        <div class="buttons">
+                            <a href="https://rickandmorty-api-app.netlify.app" target="_blank">Ver proyecto</a>
+                            <a href="https://github.com/NilsonDM/Rick-MortyAPP.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio">
+                    <img src="./img/users-CRUD.png" alt="CRUD de usuarios">
+                    <div class="portfolio_description ">
+                        <h3>CRUD de usuarios</h3>
+                        <p>
+                            Es una aplicación en al que de puede crear, editar y eliminar un usuario. Se utilizó
+                            useForm, ademas de los típicos hooks como useEffect y useState.
+                        </p>
+
+                        <div class="buttons">
+                            <a href="https://crud-aplication.netlify.app" target="_blank">Ver proyecto</a>
+                            <a href="https://github.com/NilsonDM/CRUD-users.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio">
+                    <img src="./img/weather-app.png" alt="weather-app">
+                    <div class="portfolio_description ">
+                        <h3>App del clima</h3>
+                        <p>
+                            Esta app del tiempo fue realizada con React y sus hooks useState y useEffect. La app usa una
+                            API que detecta nuestra ubicación actual, ademas, ofrece información como la temperatura,
+                            vientos, presión atmosferica, etc.
+                        </p>
+
+                        <div class="buttons">
+                            <a href="https://weather-nilson.netlify.app" target="_blank">Ver proyecto</a>
+                            <a href="https://github.com/NilsonDM/weatherAPP.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+        </section>
+
+        <section id="contact">
+            <h2>Contactame</h2>
+
+            <form class="form" data-netlify="true">
+                <input type="text" placeholder="Ingresa tu nombre" name="nameUser" id="nameUser" required>
+                <input type="email" placeholder="Ingresa tu correo" name="emailUser" id="emailUser" required>
+
+                <textarea name="commentUser" id="commentUser" cols="30" rows="10"
+                    placeholder="Escribeme ..."></textarea>
+
+                <button class="btn">Enviar</button>
+            </form>
+
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
